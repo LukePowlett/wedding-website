@@ -788,7 +788,7 @@ Google map
 RSVP form
 ========================================================================== */
 .rsvp {
-  padding-bottom: 140px;
+  padding-bottom: 20px;
   .rsvp-form {
     .rsvp-options {
       display: flex;
@@ -895,6 +895,243 @@ RSVP form
       }
       input:-ms-input-placeholder {
         color: $form-placeholder;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Day Details (Tell me more)
+========================================================================== */
+#more {
+  .details-intro {
+    margin-bottom: 40px;
+  }
+
+  .day-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    > [class*="col-"] {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  }
+
+  .detail-card {
+    border: 1px solid $keyline-color;
+    border-radius: 5px;
+    padding: 28px 30px;
+    flex: 1;
+    text-align: left;
+
+    .detail-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid $keyline-color;
+
+      > i {
+        font-size: 18px;
+        color: $accent-color;
+      }
+
+      h4 {
+        margin: 0;
+        color: $txt-secondary;
+        font-size: 13px;
+        font-weight: $bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+
+    .detail-block {
+      margin-bottom: 22px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .detail-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: $accent-color;
+      font-weight: $bold;
+      margin-bottom: 10px;
+
+      i {
+        margin-right: 4px;
+      }
+    }
+
+    .venue-name {
+      font-weight: $semibold;
+      color: $txt-secondary;
+      font-size: 14px;
+      margin-bottom: 2px;
+      padding-bottom: 0;
+    }
+
+    .venue-address {
+      font-size: 14px;
+      color: $txt-primary;
+      line-height: 1.7;
+      margin-bottom: 12px;
+      padding-bottom: 0;
+    }
+
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: $semibold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: $accent-color;
+      border: 1px solid $accent-color;
+      border-radius: 3px;
+      padding: 5px 12px;
+      margin-bottom: 10px;
+      transition: background-color 200ms ease, color 200ms ease;
+
+      &:hover {
+        background-color: $accent-color;
+        color: #fff;
+      }
+    }
+
+    .venue-note {
+      font-size: 13px;
+      color: $txt-primary;
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .timeline {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        font-size: 14px;
+        color: $txt-primary;
+        padding: 8px 0 8px 16px;
+        border-bottom: 1px solid $keyline-color;
+        position: relative;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:before {
+          content: "";
+          width: 5px;
+          height: 5px;
+          background-color: $accent-color;
+          border-radius: 50%;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  .hotels-accordion {
+    border: 1px solid $keyline-color;
+    border-radius: 5px;
+    margin-top: 10px;
+
+    .hotels-toggle {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 24px;
+      cursor: pointer;
+      color: $txt-secondary;
+      font-size: 14px;
+      transition: background-color 200ms ease;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: rgba(232, 202, 111, 0.06);
+      }
+
+      > i:first-child {
+        color: $accent-color;
+        font-size: 16px;
+      }
+
+      > span {
+        flex: 1;
+      }
+
+      .hotels-chevron {
+        font-size: 11px;
+        color: $txt-primary;
+        transition: transform 200ms ease;
+      }
+
+      &[aria-expanded="true"] {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        .hotels-chevron {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .hotels-list {
+      margin: 0;
+      padding: 0 24px 4px;
+      border-top: 1px solid $keyline-color;
+
+      li {
+        padding: 14px 0;
+        border-bottom: 1px solid $keyline-color;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          display: block;
+          font-weight: $semibold;
+          font-size: 14px;
+          color: $txt-secondary;
+          margin-bottom: 2px;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+
+        .hotel-note {
+          display: block;
+          font-size: 13px;
+          color: $txt-primary;
+        }
+
+        .venue-name {
+          display: block;
+          font-weight: $semibold;
+          font-size: 14px;
+          color: $txt-secondary;
+          margin-bottom: 2px;
+          padding-bottom: 0;
+        }
       }
     }
   }
