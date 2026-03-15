@@ -42,6 +42,13 @@ The reception will conclude no later than 11pm.
 
 It's called the **feasting room** for a reason - come hungry!.
 
+# FAQs
+
+- Attire: Formal.
+- Accommodation: See below for some local hotels.
+- Parking: There is a paid car park at The Woodsman, and paid street parking outside the church. Uber's are also readily available.
+- Gifting: The most important thing is to have you with us on our special day. If you would like to give a gift, a contribution towards our honeymoon would be greatly appreciated!
+
 # Some Local Hotels
 
 - Alveston Manor, Stratford-upon-Avon: https://www.macdonaldhotels.co.uk/alveston-manor
@@ -53,3 +60,4 @@ It's called the **feasting room** for a reason - come hungry!.
 - Crown Plaza, Stratford-upon-Avon: https://www.ihg.com/crowneplaza/hotels/gb/en/stratford-upon-avon/sfdua/hoteldetail
   - Pool & spa, 15-minute walk to church
 - Premier Inns: https://www.premierinn.com/gb/en/hotels/england/warwickshire/stratford-upon-avon/stratford-upon-avon-central.html, https://www.premierinn.com/gb/en/hotels/england/warwickshire/stratford-upon-avon/stratford-upon-avon-waterways.html
+
