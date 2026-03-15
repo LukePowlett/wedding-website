@@ -252,7 +252,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/hero2.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -790,6 +790,53 @@ RSVP form
 .rsvp {
   padding-bottom: 140px;
   .rsvp-form {
+    .rsvp-options {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+
+      .rsvp-option {
+        flex: 1;
+        cursor: pointer;
+        margin: 0;
+
+        input[type="radio"] {
+          position: absolute;
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+        .rsvp-option-content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          padding: 16px 20px;
+          border: solid 1px $keyline-color;
+          border-radius: 5px;
+          font-size: 14px;
+          color: $txt-primary;
+          transition: border-color 200ms ease, background-color 200ms ease, color 200ms ease;
+          width: 100%;
+
+          i {
+            color: $accent-color;
+          }
+        }
+
+        input[type="radio"]:checked + .rsvp-option-content {
+          border-color: $accent-color;
+          background-color: rgba(232, 202, 111, 0.1);
+          color: $txt-secondary;
+        }
+
+        &:hover .rsvp-option-content {
+          border-color: $accent-color;
+        }
+      }
+    }
+
     .rsvp-btn {
       padding: 15px 0;
       border-radius: 3px;
